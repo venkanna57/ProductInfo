@@ -16,9 +16,11 @@ public class OrderDetail {
 	
 	private double totalPrice;
 	
-	@OneToOne
-	@JoinColumn(name = "userId")
-	private User user;
+	private Integer userId;
+	
+//	@OneToOne
+//	@JoinColumn(name = "userId")
+//	private User user;
 
 	public Integer getOrderDetailId() {
 		return orderDetailId;
@@ -35,14 +37,24 @@ public class OrderDetail {
 	public void setTotalPrice(double totalPrice) {
 		this.totalPrice = totalPrice;
 	}
+//
+//	public User getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
-	public User getUser() {
-		return user;
+	public Integer getUserId() {
+		return userId;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
+	
+	
 	
 	
 
