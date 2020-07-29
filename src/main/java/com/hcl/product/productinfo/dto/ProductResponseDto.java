@@ -1,6 +1,6 @@
 package com.hcl.product.productinfo.dto;
 
-public class OrderResponseDto {
+public class ProductResponseDto {
 	private String message;
 	private int statusCode;
 	public String getMessage() {
