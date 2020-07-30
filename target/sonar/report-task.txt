@@ -1,0 +1,6 @@
+projectKey=com.hcl.product:productinfo
+serverUrl=http://localhost:9000
+serverVersion=6.4.0.25310
+dashboardUrl=http://localhost:9000/dashboard/index/com.hcl.product:productinfo
+ceTaskId=AXOaicxP34f_kWq0BrxN
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXOaicxP34f_kWq0BrxN

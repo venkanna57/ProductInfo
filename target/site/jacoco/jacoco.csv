@@ -1,0 +1,17 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+productinfo,com.hcl.product.productinfo,ProductinfoApplication,5,3,0,0,2,1,1,1,1,1
+productinfo,com.hcl.product.productinfo.entity,Orders,28,3,0,0,12,1,8,1,8,1
+productinfo,com.hcl.product.productinfo.entity,Rating,42,3,0,0,18,1,12,1,12,1
+productinfo,com.hcl.product.productinfo.entity,Product,35,3,0,0,15,1,10,1,10,1
+productinfo,com.hcl.product.productinfo.entity,User,35,3,0,0,15,1,10,1,10,1
+productinfo,com.hcl.product.productinfo.entity,OrderDetail,21,3,0,0,9,1,6,1,6,1
+productinfo,com.hcl.product.productinfo.entity,Store,14,3,0,0,6,1,4,1,4,1
+productinfo,com.hcl.product.productinfo.config,ApplicationConstant,7,0,0,0,2,0,2,0,2,0
+productinfo,com.hcl.product.productinfo.config,SwaggerConfig,0,14,0,0,0,6,0,2,0,2
+productinfo,com.hcl.product.productinfo.controller,ProductController,25,7,0,0,5,2,2,2,2,2
+productinfo,com.hcl.product.productinfo.service,ProductService,86,7,4,0,22,2,4,2,2,2
+productinfo,com.hcl.product.productinfo.dto,OrderDetailResponseDto,24,0,0,0,10,0,7,0,7,0
+productinfo,com.hcl.product.productinfo.dto,ProductResponseDto,24,0,0,0,10,0,7,0,7,0
+productinfo,com.hcl.product.productinfo.exception,UserNotFoundException,4,0,0,0,2,0,1,0,1,0
+productinfo,com.hcl.product.productinfo.exception,ProductNotAvailableException,4,0,0,0,2,0,1,0,1,0
+productinfo,com.hcl.product.productinfo.exception,GlobalExceptionHandler,60,3,0,0,12,1,3,1,3,1
