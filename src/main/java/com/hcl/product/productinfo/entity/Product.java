@@ -12,11 +12,8 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer productId;
-
 	private String productName;
-
 	private String productDescription;
-
 	private Integer productRating;
 
 	@OneToOne
@@ -26,6 +23,16 @@ public class Product {
 	public Integer getProductId() {
 		return productId;
 	}
+
+	public Store getStore() {
+		return store;
+	}
+
+
+	public void setStore(Store store) {
+		this.store = store;
+	}
+
 
 	public void setProductId(Integer productId) {
 		this.productId = productId;
@@ -55,12 +62,5 @@ public class Product {
 		this.productRating = productRating;
 	}
 
-	public Store getStore() {
-		return store;
-	}
 
-	public void setStore(Store store) {
-		this.store = store;
-	}
-	
 }

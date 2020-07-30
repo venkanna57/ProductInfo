@@ -10,6 +10,16 @@ public class ProductRequestDto {
 	private String productDescription;
 
 	private Integer productRating;
+    private Integer storeId;
+
+    
+	public Integer getStoreId() {
+		return storeId;
+	}
+
+	public void setStoreId(Integer storeId) {
+		this.storeId = storeId;
+	}
 
 	public Integer getProductId() {
 		return productId;
