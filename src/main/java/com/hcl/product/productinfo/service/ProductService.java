@@ -8,6 +8,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+
+import com.hcl.product.productinfo.constants.ApplicationConstants;
 import com.hcl.product.productinfo.controller.ProductController;
 import com.hcl.product.productinfo.dto.ProductRequestDto;
 import com.hcl.product.productinfo.dto.ProductResponseDto;
@@ -15,6 +17,7 @@ import com.hcl.product.productinfo.dto.ReviewRequestDto;
 import com.hcl.product.productinfo.dto.ReviewResponseDto;
 import com.hcl.product.productinfo.entity.Product;
 import com.hcl.product.productinfo.entity.User;
+import com.hcl.product.productinfo.exception.ProductNotFoundException;
 import com.hcl.product.productinfo.repository.ProductOrderRepository;
 import com.hcl.product.productinfo.repository.ProductRepository;
 import com.hcl.product.productinfo.repository.ReviewRepository;
@@ -103,6 +106,10 @@ public class ProductService {
 							reviewResponseDto.setStatusMessage("Already Reviewed");
 							reviewResponseDto.setStatusCode(HttpStatus.OK.value());
 						}
+					else {
+						throw new ProductNotFoundException(ApplicationConstants.PRODUCT_NOT_FOUND);
+					}
+					
 					}
 				}	
 			
