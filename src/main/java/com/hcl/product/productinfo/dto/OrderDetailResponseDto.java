@@ -6,18 +6,20 @@ import com.hcl.product.productinfo.entity.OrderDetail;
 
 public class OrderDetailResponseDto {
 	
-	private List<OrderDetail> OrderDetails ; 
+	private List<OrderDetail> orderDetails ; 
 	
 	private Integer statusCode;
 	
 	private String statusMessage;
 
+
+
 	public List<OrderDetail> getOrderDetails() {
-		return OrderDetails;
+		return orderDetails;
 	}
 
 	public void setOrderDetails(List<OrderDetail> orderDetails) {
-		OrderDetails = orderDetails;
+		this.orderDetails = orderDetails;
 	}
 
 	public Integer getStatusCode() {
